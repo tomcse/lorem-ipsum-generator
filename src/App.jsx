@@ -38,8 +38,7 @@ const App = () => {
       </form>
       <div className="lorem-text">
         {text.map((paragraph) => {
-          const id = nanoid();
-          return <p key={id}>{paragraph}</p>;
+          return <p key={nanoid()}>{paragraph}</p>;
         })}
       </div>
     </section>
